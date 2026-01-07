@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sports Website</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color: #f5f7fa;
+      }
+
+      /* NAVBAR */
+      nav {
+        background-color: #0f172a;
+        padding: 12px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #38bdf8;
+      }
+
+      /* GALLERY */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .gallery img {
+        width: 180px;
+        height: 120px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.08);
+      }
+
+      .gallery a {
+        text-decoration: none;
+        color: #0f172a;
+        font-weight: 600;
+      }
+
+      h1,
+      h2 {
+        color: #0f172a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="cricket.html">🏏 Cricket</a></li>
+        <li><a href="football.html">⚽ Football</a></li>
+        <li><a href="basketball.html">🏀 Basketball</a></li>
+        <li><a href="tennis.html">🎾 Tennis</a></li>
+        <li><a href="hockey.html">🏑 Hockey</a></li>
+        <li><a href="badminton.html">🏸 Badminton</a></li>
+        <li><a href="https://onkar-chaugule.site/">ℹ️ About</a></li>
+      </ul>
+    </nav>
+
+    <center>
+      <h1>🏅 Welcome to Sports World</h1>
+      <img src="Sport_home.png" alt="Banner of Sports" width="1024" />
+
+      <h2>
+        Sports improve fitness, discipline, and teamwork 💪🤝 <br />
+        Explore some popular sports below ⬇️
+      </h2>
+    </center>
+
+    <hr />
+
+    <center id="sports">
+      <h1>❤️ My Favorite Sports</h1>
+    </center>
+
+    <div class="gallery">
+      <div>
+        <a href="cricket.html" target="_blank">
+          <img
+            src="https://www.4squaresports.com/Banner%20Images/1088580.jpg"
+          />
+          <p>🏏 Cricket</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="football.html" target="_blank">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/069/646/739/small/soccer-ball-hitting-the-net-after-scoring-goal-on-green-grass-field-photo.jpg"
+          />
+          <p>⚽ Football</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="basketball.html" target="_blank">
+          <img
+            src="https://www.rockstaracademy.com/lib/images/news/basketball.jpeg"
+          />
+          <p>🏀 Basketball</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="tennis.html" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_Racket_and_Balls.jpg"
+          />
+          <p>🎾 Tennis</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="hockey.html" target="_blank">
+          <img
+            src="https://www.tutorialspoint.com/hockey/images/equipment.jpg"
+          />
+          <p>🏑 Hockey</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="badminton.html" target="_blank">
+          <img
+            src="https://media.istockphoto.com/id/1809237161/photo/badminton-play.jpg?s=612x612&w=0&k=20&c=pmZKiP3TKA1q8qrxl9g4o8DqMHwJMQ8DPAUWez2Ks4s="
+          />
+          <p>🏸 Badminton</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
