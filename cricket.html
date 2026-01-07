@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color: #f5f7fa;
+      }
+
+      /* NAVBAR */
+      nav {
+        background-color: #0f172a;
+        padding: 12px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #38bdf8;
+      }
+
+      /* GALLERY */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .gallery img {
+        width: 180px;
+        height: 120px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.08);
+      }
+
+      .gallery a {
+        text-decoration: none;
+        color: #0f172a;
+        font-weight: 600;
+      }
+
+      h1,
+      h2 {
+        color: #0f172a;
+      }
+    </style>
+    <title>Cricket</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="cricket.html">🏏 Cricket</a></li>
+        <li><a href="football.html">⚽ Football</a></li>
+        <li><a href="basketball.html">🏀 Basketball</a></li>
+        <li><a href="tennis.html">🎾 Tennis</a></li>
+        <li><a href="hockey.html">🏑 Hockey</a></li>
+        <li><a href="badminton.html">🏸 Badminton</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+      </ul>
+    </nav>
+    <h1>Cricket</h1>
+    <img src="Cricket.png" alt="cricket image" width="1024" />
+
+    <p>Cricket is a popular team sport played worldwide.</p>
+
+    <h2>About Cricket</h2>
+    <ul>
+      <li>
+        Cricket is a team sport played between two teams of 11 players each.
+      </li>
+      <li>It is played using a bat and a ball on a circular or oval ground.</li>
+      <li>The main objective is to score more runs than the opposing team.</li>
+      <li>
+        Popular formats include Test Cricket, One Day Internationals (ODI), and
+        T20.
+      </li>
+      <li>
+        Cricket is very popular in India, England, Australia, and South Africa.
+      </li>
+    </ul>
+    <h1>Popular Cricket Players</h1>
+
+    <table cellpadding="20">
+      <tr>
+        <td align="center">
+          <h3>Virat Kohli<br />India</h3>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyToHgbacDJTameKSBDcsGhGmQYXa03GWASFVxj6-YwJLzhX4nl2h5ZDd17Ji9VcGF3KH4mjzheXQsQHURMhgc605-6pjiVdfLKBAI_3flFA&s=10"
+            width="200"
+            alt="Virat Kohli"
+          />
+        </td>
+
+        <td align="center">
+          <h3>MS Dhoni<br />India</h3>
+          <img
+            src="https://admin.thecricketer.com/weblab/Sites/96c8b790-b593-bfda-0ba4-ecd3a9fdefc2/resources/images/site/dhoniheadshot-min.jpg"
+            width="200"
+            height="200"
+            alt="MS Dhoni"
+          />
+        </td>
+
+        <td align="center">
+          <h3>Babar Azam<br />Pakistan</h3>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDER7oc5d9W_0lz31fp1AE2ALSgPIqMagXWuRiW-s0U-yWZu9Bxsm9GF0KMQskdUuMIsbQoZOqXOsP08GCR7VWfrzXR2Ubix0XbfplBduDoA&s=10"
+            width="200"
+            height="200"
+            alt="Babar Azam"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">
+          <h3>Joe Root<br />England</h3>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEm2wUeQJY0tOHTvXJEw1a0exHPofW3LkIw&s"
+            width="200"
+            height="200"
+            alt="Joe Root"
+          />
+        </td>
+
+        <td align="center">
+          <h3>Kane Williamson<br />New Zealand</h3>
+          <img
+            src="https://www.nzc.nz/media/16988/kane-williamson.jpg"
+            width="200"
+            height="200"
+            alt="Kane Williamson"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

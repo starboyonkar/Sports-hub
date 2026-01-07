@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color: #f5f7fa;
+      }
+
+      /* NAVBAR */
+      nav {
+        background-color: #0f172a;
+        padding: 12px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #38bdf8;
+      }
+
+      /* GALLERY */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .gallery img {
+        width: 180px;
+        height: 120px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.08);
+      }
+
+      .gallery a {
+        text-decoration: none;
+        color: #0f172a;
+        font-weight: 600;
+      }
+
+      h1,
+      h2 {
+        color: #0f172a;
+      }
+    </style>
+    <title>Basketball</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="cricket.html">🏏 Cricket</a></li>
+        <li><a href="football.html">⚽ Football</a></li>
+        <li><a href="basketball.html">🏀 Basketball</a></li>
+        <li><a href="tennis.html">🎾 Tennis</a></li>
+        <li><a href="hockey.html">🏑 Hockey</a></li>
+        <li><a href="badminton.html">🏸 Badminton</a></li>
+        <li><a href="https://onkar-chaugule.site/">ℹ️ About</a></li>
+      </ul>
+    </nav>
+    <h1>Basketball</h1>
+    <img src="BasketBall.png" alt="BasketBall" width="1024" />
+    <br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png"
+      width="300"
+    />
+    <p>Basketball is played between two teams of five players.</p>
+    <h2>About Basketball</h2>
+    <ul>
+      <li>Basketball is played between two teams of five players each.</li>
+      <li>
+        The objective is to score points by throwing the ball into the basket.
+      </li>
+      <li>It is played on a rectangular court.</li>
+      <li>The game requires speed, coordination, and teamwork.</li>
+      <li>NBA is the most famous basketball league.</li>
+    </ul>
+  </body>
+</html>
