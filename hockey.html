@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color: #f5f7fa;
+      }
+
+      /* NAVBAR */
+      nav {
+        background-color: #0f172a;
+        padding: 12px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #38bdf8;
+      }
+
+      /* GALLERY */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .gallery img {
+        width: 180px;
+        height: 120px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.08);
+      }
+
+      .gallery a {
+        text-decoration: none;
+        color: #0f172a;
+        font-weight: 600;
+      }
+
+      h1,
+      h2 {
+        color: #0f172a;
+      }
+    </style>
+    <title>Hockey</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="cricket.html">🏏 Cricket</a></li>
+        <li><a href="football.html">⚽ Football</a></li>
+        <li><a href="basketball.html">🏀 Basketball</a></li>
+        <li><a href="tennis.html">🎾 Tennis</a></li>
+        <li><a href="hockey.html">🏑 Hockey</a></li>
+        <li><a href="badminton.html">🏸 Badminton</a></li>
+        <li><a href="https://onkar-chaugule.site/">ℹ️ About</a></li>
+      </ul>
+    </nav>
+    <h1>Hockey</h1>
+    <img src="Hockey.png" alt="Hockey" width="1024" />
+    <br />
+
+    <p>Hockey is a team sport played with sticks.</p>
+    <h2>About Hockey</h2>
+    <ul>
+      <li>Hockey is played using a stick and a ball.</li>
+      <li>
+        Two teams try to score goals by hitting the ball into the opponent’s
+        goal.
+      </li>
+      <li>Each team has 11 players.</li>
+      <li>India has a strong history in field hockey.</li>
+      <li>It requires speed, strength, and coordination.</li>
+    </ul>
+  </body>
+</html>

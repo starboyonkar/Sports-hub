@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color: #f5f7fa;
+      }
+
+      /* NAVBAR */
+      nav {
+        background-color: #0f172a;
+        padding: 12px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #38bdf8;
+      }
+
+      /* GALLERY */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .gallery img {
+        width: 180px;
+        height: 120px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.08);
+      }
+
+      .gallery a {
+        text-decoration: none;
+        color: #0f172a;
+        font-weight: 600;
+      }
+
+      h1,
+      h2 {
+        color: #0f172a;
+      }
+    </style>
+    <title>Football</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="cricket.html">🏏 Cricket</a></li>
+        <li><a href="football.html">⚽ Football</a></li>
+        <li><a href="basketball.html">🏀 Basketball</a></li>
+        <li><a href="tennis.html">🎾 Tennis</a></li>
+        <li><a href="hockey.html">🏑 Hockey</a></li>
+        <li><a href="badminton.html">🏸 Badminton</a></li>
+        <li><a href="https://onkar-chaugule.site/">ℹ️ About</a></li>
+      </ul>
+    </nav>
+    <h1>Football</h1>
+    <img src="FootBall.png" alt="FootBall" width="1024" />
+    <br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg"
+      width="300"
+      height="300"
+    />
+    <p>Football is the most popular sport in the world.</p>
+    <h2>About Football</h2>
+    <ul>
+      <li>Football is played between two teams of 11 players.</li>
+      <li>
+        The main aim is to score goals by kicking the ball into the opponent’s
+        net.
+      </li>
+      <li>
+        Players are not allowed to touch the ball with hands (except the
+        goalkeeper).
+      </li>
+      <li>It is the most popular sport in the world.</li>
+      <li>The FIFA World Cup is the biggest football tournament.</li>
+    </ul>
+    <h1>Popular Football Players</h1>
+
+    <table cellpadding="20">
+      <tr>
+        <td align="center">
+          <h3>Lionel Messi<br />Argentina</h3>
+          <img
+            src="https://www.vedantu.com/seo/content-images/a2de1c30-d35c-40f2-8bbf-1c8905273394_compressed_2.jpg"
+            width="200"
+            height="200"
+            alt="Lionel Messi"
+          />
+        </td>
+
+        <td align="center">
+          <h3>Cristiano Ronaldo<br />Portugal</h3>
+          <img
+            src="https://scontent.fpnq13-5.fna.fbcdn.net/v/t39.30808-6/485330405_3846532502237208_502341409211070288_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-h7hPARQCGAQ7kNvwGullok&_nc_oc=AdkzpxT5-HtungeQBdJRdTtfbNYBAknQKgRR0G1vmJafB_KR3tAESh-HlGnQvAZ779pAWUq216ydOJ2Wyh0BC0zi&_nc_zt=23&_nc_ht=scontent.fpnq13-5.fna&_nc_gid=9OXf7WQ3DUHeReNjsq2gmw&oh=00_Afo5-dgbZ4kteunXKuHdl1Qo9GXvrYW7d-IqnN7n9GIGow&oe=69632E7D"
+            width="200"
+            height="200"
+            alt="Cristiano Ronaldo"
+          />
+        </td>
+
+        <td align="center">
+          <h3>Neymar Jr<br />Brazil</h3>
+          <img
+            src="https://b.fssta.com/uploads/application/soccer/headshots/713.png"
+            width="200"
+            height="200"
+            alt="Neymar Jr"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">
+          <h3>Kylian Mbappé<br />France</h3>
+          <img
+            src="https://imageio.forbes.com/specials-images/imageserve/626c7cf3616c1112ae834a2b/0x0.jpg?format=jpg&crop=1603,1603,x1533,y577,safe&height=416&width=416&fit=bounds"
+            width="200"
+            height="200"
+            alt="Kylian Mbappe"
+          />
+        </td>
+
+        <td align="center">
+          <h3>Kevin De Bruyne<br />Belgium</h3>
+          <img
+            src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_4:3,f_auto,q_auto,g_auto/shape/cover/sport/let_kevin_de_bruyne_talk___the_turning_point-1ab24a5f934c2722495780a848aee4dc.jpg"
+            width="200"
+            height="200"
+            alt="Kevin De Bruyne"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
