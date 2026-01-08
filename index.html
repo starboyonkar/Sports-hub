@@ -71,7 +71,7 @@
 
       .gallery img:hover {
         transform: scale(1.08);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
       }
 
       .gallery a {
@@ -82,37 +82,76 @@
 
       /* FOOTER */
       footer {
-        background-color: #0f172a;
+        background: linear-gradient(135deg, #020617, #0f172a);
         color: white;
-        padding: 30px 0;
-        margin-top: 40px;
+        padding: 40px 0;
+        margin-top: 50px;
       }
 
       .footer-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 18px;
+      }
+
+      .footer-container h3 {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 1px;
       }
 
       .social-icons {
         display: flex;
-        gap: 25px;
+        gap: 28px;
       }
 
       .social-icons a {
-        color: white;
-        transition: transform 0.3s, color 0.3s;
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #020617;
+        box-shadow: 0 0 0 rgba(56, 189, 248, 0.6);
+        transition: all 0.35s ease;
       }
 
-      .social-icons a:hover {
-        transform: scale(1.2);
-        color: #38bdf8;
+      .social-icons svg {
+        width: 26px;
+        height: 26px;
+        fill: white;
+      }
+
+      /* Hover brand colors */
+      .linkedin:hover {
+        background-color: #0a66c2;
+        transform: translateY(-6px);
+        box-shadow: 0 0 18px #0a66c2;
+      }
+
+      .github:hover {
+        background-color: #24292e;
+        transform: translateY(-6px);
+        box-shadow: 0 0 18px #6e7681;
+      }
+
+      .youtube:hover {
+        background-color: #ff0000;
+        transform: translateY(-6px);
+        box-shadow: 0 0 18px #ff0000;
+      }
+
+      .whatsapp:hover {
+        background-color: #25d366;
+        transform: translateY(-6px);
+        box-shadow: 0 0 18px #25d366;
       }
 
       footer p {
         font-size: 14px;
-        opacity: 0.8;
+        opacity: 0.85;
       }
 
       /* RESPONSIVE */
@@ -145,11 +184,9 @@
       </ul>
     </nav>
 
-    <!-- HERO SECTION -->
     <center>
       <h1>🏅 Welcome to Sports World</h1>
       <img src="Sport_home.png" alt="Banner of Sports" width="1024" />
-
       <h2>
         Sports improve fitness, discipline, and teamwork 💪🤝 <br />
         Explore some popular sports below ⬇️
@@ -158,70 +195,58 @@
 
     <hr />
 
-    <!-- FAVORITE SPORTS -->
-    <center id="sports">
+    <center>
       <h1>❤️ My Favorite Sports</h1>
     </center>
 
     <div class="gallery">
       <div>
-        <a href="cricket.html" target="_blank">
-          <img
+        <a href="cricket.html"
+          ><img
             src="https://www.4squaresports.com/Banner%20Images/1088580.jpg"
-            alt="Cricket"
           />
-          <p>🏏 Cricket</p>
-        </a>
+          <p>🏏 Cricket</p></a
+        >
       </div>
-
       <div>
-        <a href="football.html" target="_blank">
-          <img
+        <a href="football.html"
+          ><img
             src="https://static.vecteezy.com/system/resources/thumbnails/069/646/739/small/soccer-ball-hitting-the-net-after-scoring-goal-on-green-grass-field-photo.jpg"
-            alt="Football"
           />
-          <p>⚽ Football</p>
-        </a>
+          <p>⚽ Football</p></a
+        >
       </div>
-
       <div>
-        <a href="basketball.html" target="_blank">
-          <img
+        <a href="basketball.html"
+          ><img
             src="https://www.rockstaracademy.com/lib/images/news/basketball.jpeg"
-            alt="Basketball"
           />
-          <p>🏀 Basketball</p>
-        </a>
+          <p>🏀 Basketball</p></a
+        >
       </div>
-
       <div>
-        <a href="tennis.html" target="_blank">
-          <img
+        <a href="tennis.html"
+          ><img
             src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_Racket_and_Balls.jpg"
-            alt="Tennis"
           />
-          <p>🎾 Tennis</p>
-        </a>
+          <p>🎾 Tennis</p></a
+        >
       </div>
-
       <div>
-        <a href="hockey.html" target="_blank">
-          <img
+        <a href="hockey.html"
+          ><img
             src="https://www.tutorialspoint.com/hockey/images/equipment.jpg"
-            alt="Hockey"
           />
-          <p>🏑 Hockey</p>
-        </a>
+          <p>🏑 Hockey</p></a
+        >
       </div>
-
       <div>
-        <a href="badminton.html" target="_blank">
-          <img
+        <a href="badminton.html"
+          ><img
             src="https://media.istockphoto.com/id/1809237161/photo/badminton-play.jpg"
-            alt="Badminton"
           />
-          <p>🏸 Badminton</p>
-        </a>
+          <p>🏸 Badminton</p></a
+        >
       </div>
     </div>
 
@@ -231,16 +256,53 @@
         <h3>📬 Connect With Me</h3>
 
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/onkar-chaugule" target="_blank"
-            >🔗</a
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/onkar-chaugule"
+            target="_blank"
+            class="linkedin"
           >
-          <a href="https://github.com/starboyonkar" target="_blank">💻</a>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.86 6 2.49 6S0 4.88 0 3.5 1.12 1 2.49 1s2.49 1.12 2.49 2.5zM0 24h5V7H0v17zM7 7h4.8v2.3h.1c.7-1.3 2.4-2.6 4.9-2.6 5.2 0 6.2 3.4 6.2 7.9V24h-5v-7.9c0-1.9 0-4.4-2.7-4.4s-3.1 2.1-3.1 4.2V24H7V7z"
+              />
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/starboyonkar"
+            target="_blank"
+            class="github"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.08 1.85 2.83 1.31 3.52 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+          </a>
+
+          <!-- YouTube -->
           <a
             href="https://www.youtube.com/channel/UCpzZr2eg1lsB6yALzsBTUlQ"
             target="_blank"
-            >▶️</a
+            class="youtube"
           >
-          <a href="https://wa.me/919373261147" target="_blank">📱</a>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M23.5 6.2s-.2-1.7-.8-2.4c-.8-.8-1.7-.8-2.1-.9C17.8 2.6 12 2.6 12 2.6h0s-5.8 0-8.6.3c-.4 0-1.3.1-2.1.9-.6.7-.8 2.4-.8 2.4S0 8.1 0 10v2c0 1.9.5 3.8.5 3.8s.2 1.7.8 2.4c.8.8 1.9.8 2.4.9 1.7.2 7.3.3 7.3.3s5.8 0 8.6-.3c.4 0 1.3-.1 2.1-.9.6-.7.8-2.4.8-2.4s.5-1.9.5-3.8v-2c0-1.9-.5-3.8-.5-3.8zM9.5 14.6V8.9l6.3 2.9-6.3 2.8z"
+              />
+            </svg>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/919373261147" target="_blank" class="whatsapp">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.5 3.5A11.9 11.9 0 0012 .1C5.4.1.1 5.4.1 12c0 2.1.5 4.1 1.5 5.9L0 24l6.3-1.6a11.8 11.8 0 005.7 1.5h.1c6.6 0 11.9-5.4 11.9-11.9 0-3.2-1.2-6.2-3.5-8.5z"
+              />
+            </svg>
+          </a>
         </div>
 
         <p>© 2026 Onkar Chaugule | Built with ❤️ using HTML & CSS</p>
